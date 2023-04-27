@@ -1,0 +1,26 @@
+{
+    "study_dirs":[
+        "2022-03-17-0426.baseline", 
+        "2022-03-17-0500.diag",
+        "2022-03-17-0500.biochem",
+        "2022-03-17-1529.notes",
+        "2022-03-21-0235.ehr",
+        "2022-03-21-0414.ehr.tune"
+    ],
+
+    "study_name": ["A", 
+        "B", 
+        "C",
+        "D",
+        "E",
+        "F"
+    ],
+
+    "get_best_fn":["get_best_exp_optuna",
+        "get_best_exp_optuna",
+        "get_best_exp_optuna",
+        "get_best_exp_optuna",
+        "get_best_exp_optuna",
+        "get_best_exp_optuna"
+    ]
+}

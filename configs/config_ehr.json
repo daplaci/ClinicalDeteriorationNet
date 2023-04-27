@@ -1,0 +1,36 @@
+{
+    "static":{
+        "admissions_file":["metadata_admissions_train.json"],
+        "train_batch":[32],
+        "val_batch":[32],
+        "input_file":["metadata_diag_biochem.json"],
+        "model":["deep"],
+        "use_gpu":["true"],
+        "optuna_iters":[4],
+        "optuna_metric":["auprc"],
+        "num_workers_per_study":[4],
+        "force_icu_concatenation":["true"],
+        "sql_dataloader":["true"],
+        "age_at_adm":["true"],
+        "idx_adm":["true"],
+        "sex":["true"],
+        "diag":["output/2022-03-17-0500.diag"],
+        "biochem":["output/2022-03-17-0500.biochem"],
+        "notes":["output/2022-03-17-1529.notes"],
+        "input_dir":["true"],
+        "cv_folds":[1],
+        "num_workers":[16],
+        "mem":[150],
+        "steps_per_epoch_train":[200],
+        "steps_per_epoch_val":[100],
+        "n_epochs":[100],
+        "trigger_time":[12],
+        "lookahaed":[24],
+        "patience":[20]
+    },
+    "dynamic":{
+        "suggest_uniform":{
+            "l2_regularizer":[0,1e-04]
+        }
+    }
+}

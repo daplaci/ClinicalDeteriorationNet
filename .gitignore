@@ -1,0 +1,11 @@
+.DS_Store
+data
+.snakemake/
+__pycache__/
+output/
+input/
+figures/
+notebook/
+.snakemake/
+.snakemake_log/
+ews-grepper/
